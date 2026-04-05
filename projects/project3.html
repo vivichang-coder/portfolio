@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redesigning Login Experience for Multi-Server Management — Vivi Chang</title>
+  <meta name="description" content="Redesigning the login experience for a surveillance management platform transitioning from single-server to multi-server architecture." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="../index.html" class="nav__logo">Vivi Chang</a>
+        <ul class="nav__links">
+          <li><a href="../index.html#projects">Projects</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#footer">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Project Hero -->
+  <header class="project-hero">
+    <div class="container">
+      <a href="../index.html" class="project-hero__back">← Back to Projects</a>
+      <p class="project-hero__tag">Complex System Simplification</p>
+      <h1>Redesigning Login Experience for Multi-Server Management</h1>
+      <p class="project-hero__subtitle">Simplifying Access for Complex Surveillance Systems</p>
+    </div>
+  </header>
+
+  <!-- Project Body -->
+  <main class="project-body">
+    <div class="container">
+
+      <!-- Overview -->
+      <div class="project-section fade-in">
+        <div class="project-section__grid">
+          <span class="section-label">Overview</span>
+          <div class="section-content">
+            <p>This project focused on redesigning the login experience for a surveillance management platform transitioning from a <strong>single-server model to a multi-server architecture</strong>.</p>
+            <p>The goal was to reduce cognitive load, improve login efficiency, and enable users to <strong>easily manage and access multiple servers within a unified flow</strong>.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Role -->
+      <div class="project-section fade-in">
+        <div class="project-section__grid">
+          <span class="section-label">Role</span>
+          <div class="section-content">
+            <h3>UX Researcher / UX Designer (Redesign Owner)</h3>
+            <ul>
+              <li>Led the redesign phase based on existing usability findings</li>
+              <li>Translated research insights into new UX flows and interaction patterns</li>
+              <li>Designed low-fidelity and high-fidelity prototypes</li>
+              <li>Planned and conducted usability testing (lo-fi → hi-fi)</li>
+              <li>Iterated design based on validation results</li>
+            </ul>
+            <hr />
+            <h3>Collaboration</h3>
+            <ul>
+              <li><strong>Previous Research Owner</strong>: Provided baseline usability findings</li>
+              <li><strong>PM</strong>: Aligned on product direction and multi-server strategy</li>
+              <li><strong>Engineering (RD)</strong>: Validated technical feasibility and system constraints</li>
+              <li><strong>UI Designer</strong>: Refined visual hierarchy and interaction details</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Problem & Impact -->
+      <div class="project-section fade-in">
+        <div class="project-section__grid">
+          <span class="section-label">Problem &amp; Impact</span>
+          <div class="section-content">
+            <h3>Problem</h3>
+            <ul>
+              <li>Existing login flow was designed for <strong>single-server access</strong></li>
+              <li>Multi-server functionality introduced complexity that the original UI could not support</li>
+              <li>Login methods (LAN search, history, manual input) were <strong>fragmented and inconsistent</strong></li>
+              <li>Key features (e.g. password recovery) were missing</li>
+              <li>Users experienced confusion when switching between different login methods</li>
+            </ul>
+            <p>Resulted in: high cognitive load, inefficient login process, and poor scalability for future features.</p>
+
+            <figure class="project-image">
+              <img src="../images/3_1_log_in_before.png" alt="Before: Legacy login interface" data-lightbox data-caption="(Before) Legacy login interface designed for single-server access, leading to fragmented flows and user confusion." loading="lazy" />
+              <figcaption>(Before) Legacy login interface designed for single-server access, leading to fragmented flows and user confusion.</figcaption>
+            </figure>
+
+            <hr />
+            <h3>Impact</h3>
+            <ul>
+              <li>Simplified multi-server login experience</li>
+              <li>Improved clarity of system structure (single vs grouped servers)</li>
+              <li>Reduced effort in accessing and managing servers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Approach -->
+      <div class="project-section fade-in">
+        <div class="project-section__grid">
+          <span class="section-label">Approach</span>
+          <div class="section-content">
+
+            <figure class="project-image">
+              <img src="../images/3_2_approach.png" alt="End-to-end iteration approach" data-lightbox data-caption="End-to-end iteration from legacy pain points to validated solution, combining rapid prototyping and real-world usability testing." loading="lazy" />
+              <figcaption>End-to-end iteration from legacy pain points to validated solution, combining rapid prototyping and real-world usability testing.</figcaption>
+            </figure>
+
+            <!-- ① -->
+            <div class="numbered-section">
+              <div class="numbered-section__head">
+                <span class="numbered-section__num">1</span>
+                <div>
+                  <p class="numbered-section__title">Insight → Design Mapping</p>
+                </div>
+              </div>
+              <h3>Insight</h3>
+              <ul>
+                <li>Users struggled to understand multi-server concepts within a single-server UI</li>
+                <li>Fragmented entry points increased decision complexity</li>
+              </ul>
+              <h3>Design Decisions</h3>
+              <ul>
+                <li>Replace dropdown-based selection with <strong>structured server list</strong></li>
+                <li>Consolidate all login methods into a <strong>single, unified entry point</strong></li>
+                <li>Introduce <strong>linear flow</strong> for server discovery and management</li>
+                <li>Clearly distinguish <strong>single vs grouped servers</strong></li>
+              </ul>
+
+              <figure class="project-image">
+                <img src="../images/3_3_Flow Comparison.png" alt="Flow comparison: fragmented vs unified" data-lightbox data-caption="Transition from fragmented login methods to a unified, structured multi-server flow." loading="lazy" />
+                <figcaption>Transition from fragmented login methods to a unified, structured multi-server flow.</figcaption>
+              </figure>
+            </div>
+
+            <hr />
+
+            <!-- ② -->
+            <div class="numbered-section">
+              <div class="numbered-section__head">
+                <span class="numbered-section__num">2</span>
+                <div>
+                  <p class="numbered-section__title">Solution Design</p>
+                </div>
+              </div>
+              <ul>
+                <li>Centralized login entry as a <strong>multi-server list</strong></li>
+                <li>Integrated server management directly into login interface</li>
+                <li>Introduced clear categorization (server type, group structure)</li>
+                <li>Enabled automatic LAN discovery on entry</li>
+                <li>Reduced steps and decision points in login flow</li>
+              </ul>
+
+              <figure class="project-image">
+                <img src="../images/3_4_server_list.png" alt="After: Structured server list" data-lightbox data-caption="(After) A structured server list replaces dropdown selection, improving visibility and control over multiple servers." loading="lazy" />
+                <figcaption>(After) A structured server list replaces dropdown selection, improving visibility and control over multiple servers.</figcaption>
+              </figure>
+
+              <figure class="project-image">
+                <img src="../images/3_5_LAN_Flow.png" alt="After: Auto LAN discovery flow" data-lightbox data-caption="(After) Starts with auto LAN discovery, with other login options accessible in the same view." loading="lazy" />
+                <figcaption>(After) Starts with auto LAN discovery, with other login options accessible in the same view.</figcaption>
+              </figure>
+            </div>
+
+            <hr />
+
+            <!-- ③ -->
+            <div class="numbered-section">
+              <div class="numbered-section__head">
+                <span class="numbered-section__num">3</span>
+                <div>
+                  <p class="numbered-section__title">Validation</p>
+                </div>
+              </div>
+
+              <h3>Lo-fi Testing (Prototype-based)</h3>
+              <ul>
+                <li>Recruited <strong>same 6 participants from previous study</strong></li>
+                <li>Evaluated usability of new login flow using interactive prototypes</li>
+              </ul>
+              <div class="value-block">
+                <p class="value-block__label">Findings</p>
+                <ul>
+                  <li>Users clearly understood single vs multi-server concepts</li>
+                  <li>Consolidated login entry significantly reduced confusion</li>
+                  <li>Linear flow improved task completion efficiency</li>
+                </ul>
+              </div>
+
+              <h3>Hi-fi Testing (Pre-launch)</h3>
+              <ul>
+                <li>Recruited <strong>10 new participants across experience levels</strong></li>
+                <li>Tested in real environment with high-fidelity UI</li>
+              </ul>
+              <div class="value-block">
+                <p class="value-block__label">Findings</p>
+                <ul>
+                  <li>Reduced confusion from hidden features and unclear steps</li>
+                  <li>Improved feedback and error prevention</li>
+                  <li>Overall login experience became more intuitive and efficient</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Key Decisions -->
+      <div class="project-section fade-in">
+        <div class="project-section__grid">
+          <span class="section-label">Key Decisions</span>
+          <div class="section-content">
+            <ul>
+              <li>Replace <strong>selection-based interaction → structured visibility</strong></li>
+              <li>Replace <strong>fragmented entry points → unified flow</strong></li>
+              <li>Replace <strong>non-scalable UI → system-oriented architecture</strong></li>
+              <li>Prioritize <strong>clarity of system structure over minimal UI</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Challenges & Trade-offs -->
+      <div class="project-section fade-in">
+        <div class="project-section__grid">
+          <span class="section-label">Challenges</span>
+          <div class="section-content">
+            <h3>Designing for a New Mental Model</h3>
+            <ul>
+              <li>Users were familiar with single-server logic</li>
+              <li>Multi-server required a new conceptual model</li>
+            </ul>
+            <div class="decision-block">
+              <p>Gradually introduce structure through clear hierarchy and visual grouping</p>
+            </div>
+            <hr />
+            <h3>Working with Existing Research</h3>
+            <ul>
+              <li>Initial usability testing was conducted by another owner</li>
+            </ul>
+            <div class="decision-block">
+              <p>Validated and extended findings through iterative testing (lo-fi → hi-fi)</p>
+            </div>
+            <hr />
+            <h3>Balancing Simplicity vs Scalability</h3>
+            <ul>
+              <li>Simplifying flow vs supporting complex server structures</li>
+            </ul>
+            <div class="decision-block">
+              <p>Design a scalable framework that remains intuitive for new users</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Learnings -->
+      <div class="project-section fade-in">
+        <div class="project-section__grid">
+          <span class="section-label">Learnings</span>
+          <div class="section-content">
+            <ul>
+              <li>Redesigning flows often requires <strong>redefining mental models</strong>, not just UI changes</li>
+              <li>Validation across multiple fidelity levels strengthens design decisions</li>
+              <li>A well-structured system can reduce complexity more effectively than simplifying UI alone</li>
+              <li>Even entry points like login can significantly impact overall product experience</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Project Navigation -->
+  <nav class="project-nav">
+    <div class="container">
+      <div class="project-nav__inner">
+        <a href="project2.html" class="project-nav__item">
+          <span class="project-nav__label">← Previous Project</span>
+          <span class="project-nav__title">Designing Scalable Onboarding &amp; Feature Discovery</span>
+        </a>
+        <a href="project4.html" class="project-nav__item project-nav__item--next">
+          <span class="project-nav__label">Next Project →</span>
+          <span class="project-nav__title">AI-Powered Smart Media Experience</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <p class="footer__greeting">Hi, Vivi is here.<br />If you're interested in my work, let's have a chat!</p>
+          <a href="mailto:weichienvivichang@gmail.com" class="footer__email">weichienvivichang@gmail.com</a>
+        </div>
+        <div class="footer__links">
+          <a href="https://www.linkedin.com/in/wei-chien-chang" target="_blank" rel="noopener noreferrer" class="btn-outline">LinkedIn &nbsp;↗</a>
+          <a href="https://www.cake.me/me/vivi-chang-fa2bce" target="_blank" rel="noopener noreferrer" class="btn-outline">Cake &nbsp;↗</a>
+        </div>
+      </div>
+      <p class="footer__copy">© 2024 Vivi Chang. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button id="lightbox-close" class="lightbox__close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" class="lightbox__img" src="" alt="" />
+    <p id="lightbox-caption" class="lightbox__caption"></p>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

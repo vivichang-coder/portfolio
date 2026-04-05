@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vivi Chang — UX Design &amp; Strategy</title>
+  <meta name="description" content="Vivi Chang — UX Researcher and Designer specializing in complex systems, enterprise products, and AI-driven experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">Vivi Chang</a>
+        <ul class="nav__links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <p class="hero__subtitle">UX Researcher &nbsp;/&nbsp; UX Designer</p>
+      <h1>Vivi Chang</h1>
+      <p class="hero__tagline">I design clarity in complex systems.</p>
+      <p class="hero__intro">I simplify complex systems, drive user adoption, and create measurable product impact.</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__label">
+          <h4>About</h4>
+        </div>
+        <div class="about__content fade-in">
+          <p>Hi, I'm Vivi Chang — a UX Designer and Researcher with a background in Human-Computer Interaction (HCI).</p>
+          <p>I specialize in designing complex systems, turning high-density features and fragmented workflows into clear, scalable user experiences.</p>
+          <p>At QNAP, I worked across B2B and B2C products (file management, multimedia, and surveillance platforms), where I led UX research and design initiatives to improve usability, reduce cognitive load, and drive feature adoption. I partner closely with PMs and engineers to identify risks early, translate insights into product strategy, and ensure solutions are both usable and feasible.</p>
+          <p>My approach combines research, system thinking, and design execution — not just to improve interfaces, but to make complex products understandable, efficient, and scalable.</p>
+          <p class="about__closing">Making complex systems clear and usable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="projects__header">
+        <h2>Projects</h2>
+      </div>
+      <div class="projects__grid">
+
+        <!-- Project 1 -->
+        <a href="projects/project1.html" class="card fade-in">
+          <div class="card__image-wrap">
+            <img src="images/1_1_event.jpg" alt="AI-Powered Smart Surveillance Experience" loading="lazy" />
+          </div>
+          <p class="card__tag">Product Vision &amp; AI Strategy</p>
+          <p class="card__title">AI-Powered Smart Surveillance Experience</p>
+          <p class="card__subtitle">Exploring Future AI Capabilities and Interaction Models</p>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="projects/project2.html" class="card fade-in">
+          <div class="card__image-wrap">
+            <img src="images/2_2_FT_cover.png" alt="Designing Scalable Onboarding &amp; Feature Discovery" loading="lazy" />
+          </div>
+          <p class="card__tag">Growth &amp; Adoption Design</p>
+          <p class="card__title">Designing Scalable Onboarding &amp; Feature Discovery</p>
+          <p class="card__subtitle">Clarity and Action from Day One</p>
+        </a>
+
+        <!-- Project 3 -->
+        <a href="projects/project3.html" class="card fade-in">
+          <div class="card__image-wrap">
+            <img src="images/3_4_server_list.png" alt="Redesigning Login Experience for Multi-Server Management" loading="lazy" />
+          </div>
+          <p class="card__tag">Complex System Simplification</p>
+          <p class="card__title">Redesigning Login Experience for Multi-Server Management</p>
+          <p class="card__subtitle">Simplifying Access for Complex Surveillance Systems</p>
+        </a>
+
+        <!-- Project 4 -->
+        <a href="projects/project4.html" class="card fade-in">
+          <div class="card__image-wrap">
+            <img src="images/4_1_home.png" alt="AI-Powered Smart Media Experience" loading="lazy" />
+          </div>
+          <p class="card__tag">Experience Innovation &amp; Exploration</p>
+          <p class="card__title">AI-Powered Smart Media Experience</p>
+          <p class="card__subtitle">Reimagining Personal Media with AI</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <p class="footer__greeting">Hi, Vivi is here.<br />If you're interested in my work, let's have a chat!</p>
+          <a href="mailto:weichienvivichang@gmail.com" class="footer__email">weichienvivichang@gmail.com</a>
+        </div>
+        <div class="footer__links">
+          <a href="https://www.linkedin.com/in/wei-chien-chang" target="_blank" rel="noopener noreferrer" class="btn-outline">
+            LinkedIn &nbsp;↗
+          </a>
+          <a href="https://www.cake.me/me/vivi-chang-fa2bce" target="_blank" rel="noopener noreferrer" class="btn-outline">
+            Cake &nbsp;↗
+          </a>
+        </div>
+      </div>
+      <p class="footer__copy">© 2024 Vivi Chang. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button id="lightbox-close" class="lightbox__close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" class="lightbox__img" src="" alt="" />
+    <p id="lightbox-caption" class="lightbox__caption"></p>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
