@@ -509,7 +509,7 @@ section {
 
 .numbered-section__head {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.75rem;
   margin-bottom: 1.25rem;
 }
@@ -526,6 +526,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  margin-top: 0.15rem;
 }
 
 .numbered-section__title {
